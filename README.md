@@ -9,6 +9,12 @@ See: https://github.com/facebook/react/issues/6544
 
 ## Usage
 
+```bash
+npm install react-video-tag
+# or
+yarn add react-video-tag
+```
+
 ```js
 import { reactVideoTag, ReactVideoTag } from 'react-video-tag'
 
