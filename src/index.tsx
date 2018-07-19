@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { SFC } from 'react'
 
 export interface ReactVideoTagOptions {
     src: string
@@ -31,7 +31,7 @@ export const reactVideoTag = ({
     return output
 }
 
-export const ReactVideoTag = (props: ReactVideoTagOptions) => (
+export const ReactVideoTag: SFC<ReactVideoTagOptions> = (props) => (
   <span
     dangerouslySetInnerHTML={{
       __html: reactVideoTag(props),
