@@ -10,8 +10,6 @@ export interface ReactVideoTagOptions {
     loop: boolean
 }
 
-// React does not render the <video> element correctly.
-// https://github.com/facebook/react/issues/6544
 export const reactVideoTag = ({
     src,
     type,
