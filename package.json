@@ -1,6 +1,6 @@
 {
   "name": "react-video-tag",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A component for rendering the video tag in React, to workaround a bug.",
   "keywords": [
     "bug",
