@@ -2,21 +2,22 @@
   "name": "react-video-tag",
   "version": "0.0.3",
   "description": "A component for rendering the video tag in React, to workaround a bug.",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "format": "prettier --write 'src/**/*.ts' '*.js'"
-  },
   "keywords": [
-    "react",
-    "video",
-    "tag",
     "bug",
-    "html"
+    "html",
+    "react",
+    "tag",
+    "video"
   ],
-  "author": "Dyan Vann <dylan@dylanvann.com>",
   "license": "MIT",
+  "author": "Dyan Vann <dylan@dylanvann.com>",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write 'src/**/*.ts' '*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "@types/react": "^16.4.6",
     "prettier": "^1.13.7",
