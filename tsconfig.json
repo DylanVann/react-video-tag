@@ -7,6 +7,7 @@
         "sourceMap": true,
         "outDir": "dist",
         "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
         "declaration": true,
         "jsx": "react"
     },
@@ -14,6 +15,7 @@
         "src/**/*"
     ],
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "**/*.test.tsx"
     ]
 }

@@ -15,7 +15,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "format": "prettier --write 'src/**/*.ts' '*.js'",
+    "format": "prettier --write 'src/**/*.tsx' '*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
