@@ -1,0 +1,18 @@
+{
+  "name": "react-video-tag",
+  "version": "0.0.1",
+  "description": "A component for rendering the video tag in React, to work around a bug.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "video",
+    "tag",
+    "bug",
+    "html"
+  ],
+  "author": "Dyan Vann <dylan@dylanvann.com>",
+  "license": "MIT"
+}
