@@ -20,3 +20,29 @@ const MyComponent = () => (
     <ReactVideoTag src={mySrc} poster={myPoster} />
 )
 ```
+
+**Props:**
+
+```ts
+export interface ReactVideoTagProps {
+    src: string;
+    poster: string;
+    type: string;
+    muted: boolean;
+    autoPlay: boolean;
+    playsInline: boolean;
+    loop: boolean;
+}
+```
+
+**By default the props on this component make it behave like a GIF:**
+
+```js
+const defaults = {
+    type = 'video/mp4',
+    muted = true,
+    autoPlay = true,
+    playsInline = true,
+    loop = true,
+}
+```
