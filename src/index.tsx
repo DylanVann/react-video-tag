@@ -1,6 +1,8 @@
 import React, { SFC } from 'react'
 
 export interface ReactVideoTagProps {
+    class?: string
+    className?: string
     src: string
     poster?: string
     type?: string
@@ -11,6 +13,8 @@ export interface ReactVideoTagProps {
 }
 
 export const reactVideoTag = (props?: ReactVideoTagProps): string => {
+    const classOrClassName = props.className || props.class
+    const classString = classOrClassName ? ` class="${classOrClassName}"` : ``
     const muted = props.muted ? ` muted` : ``
     const autoPlay = props.autoPlay ? ` autoplay` : ``
     const playsInline = props.playsInline ? ` playsinline` : ``
@@ -18,7 +22,7 @@ export const reactVideoTag = (props?: ReactVideoTagProps): string => {
     const poster = props.poster ? ` poster` : ``
     const src = props.src ? ` src="${props.src}"` : ``
     const type = props.type ? ` type="${props.type}"` : ``
-    return `<video${muted}${autoPlay}${playsInline}${loop}${poster}><source${src}${type}></video>`
+    return `<video${classString}${muted}${autoPlay}${playsInline}${loop}${poster}><source${src}${type}></video>`
 }
 
 export const ReactVideoTag: SFC<ReactVideoTagProps> = props => (
