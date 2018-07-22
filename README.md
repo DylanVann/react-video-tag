@@ -50,3 +50,7 @@ const defaults = {
     loop = true,
 }
 ```
+
+## License
+
+[MIT](LICENSE)
