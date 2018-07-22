@@ -1,9 +1,7 @@
-import React, { SFC } from 'react'
-
-export interface ReactVideoTagProps {
+export interface VideoTagProps {
     class?: string
     className?: string
-    src: string
+    src?: string
     poster?: string
     type?: string
     muted?: boolean
@@ -12,7 +10,7 @@ export interface ReactVideoTagProps {
     loop?: boolean
 }
 
-export const reactVideoTag = (props?: ReactVideoTagProps): string => {
+export const videoTagString = (props: VideoTagProps = {}): string => {
     const classOrClassName = props.className || props.class
     const classString = classOrClassName ? ` class="${classOrClassName}"` : ``
     const muted = props.muted ? ` muted` : ``
@@ -20,15 +18,8 @@ export const reactVideoTag = (props?: ReactVideoTagProps): string => {
     const playsInline = props.playsInline ? ` playsinline` : ``
     const loop = props.loop ? ` loop` : ``
     const poster = props.poster ? ` poster` : ``
-    const src = props.src ? ` src="${props.src}"` : ``
+    const src = props.src ? ` src="${props.src}"` : ` src=""` // required
     const type = props.type ? ` type="${props.type}"` : ``
+
     return `<video${classString}${muted}${autoPlay}${playsInline}${loop}${poster}><source${src}${type}></video>`
 }
-
-export const ReactVideoTag: SFC<ReactVideoTagProps> = props => (
-    <span
-        dangerouslySetInnerHTML={{
-            __html: reactVideoTag(props),
-        }}
-    />
-)

@@ -2,7 +2,7 @@
 
 This package was created because React does not render `<video>` correctly.
 
-Specifically it does not render the `muted` attribute, which means it's 
+Specifically it does not render the `muted` attribute, which means it's
 not possible to get some videos to behave as GIFS on mobile devices.
 
 See: https://github.com/facebook/react/issues/6544
@@ -16,28 +16,26 @@ yarn add react-video-tag
 ```
 
 ```js
-import { reactVideoTag, ReactVideoTag } from 'react-video-tag'
+import { videoTagString, VideoTag } from 'react-video-tag'
 
 // reactVideoTag renders a string from props.
-reactVideoTag({ src: '...', poster: '...' })
+videoTagString({ src: '...', poster: '...' })
 
 // ReactVideoTag renders a wrapping span and uses dangerouslySetInnerHTML.
-const MyComponent = () => (
-    <ReactVideoTag src={mySrc} poster={myPoster} />
-)
+const MyComponent = () => <VideoTag src={mySrc} poster={myPoster} />
 ```
 
 **Props:**
 
 ```ts
-export interface ReactVideoTagProps {
-    src: string;
-    poster: string;
-    type: string;
-    muted: boolean;
-    autoPlay: boolean;
-    playsInline: boolean;
-    loop: boolean;
+export interface VideoTagProps {
+    src: string
+    poster: string
+    type: string
+    muted: boolean
+    autoPlay: boolean
+    playsInline: boolean
+    loop: boolean
 }
 ```
 

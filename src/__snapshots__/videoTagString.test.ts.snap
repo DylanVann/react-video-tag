@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`outputs a string 1`] = `"<video><source src=\\"\\"></video>"`;
+
+exports[`outputs a string with props 1`] = `"<video class=\\"test-class\\" poster><source src=\\"image.png\\" type=\\"mp4\\"></video>"`;

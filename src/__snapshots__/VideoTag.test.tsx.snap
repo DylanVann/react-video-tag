@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<span
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "<video muted autoplay playsinline loop><source src=\\"\\"></video>",
+    }
+  }
+/>
+`;
+
+exports[`renders with src 1`] = `
+<span
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "<video muted autoplay playsinline loop><source src=\\"test.png\\"></video>",
+    }
+  }
+/>
+`;
